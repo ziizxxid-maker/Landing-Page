@@ -1,0 +1,273 @@
+/* HEADER UTAMA */
+.main-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #0d6efd;
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    z-index: 1002;
+}
+
+/* HAMBURGER */
+.menu-btn {
+    font-size: 26px;
+    cursor: pointer;
+    color: white;
+    margin-right: 15px;
+}
+
+/* BRAND (LOGO + NAMA) */
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 28px;
+}
+
+/* LOGO */
+.brand img {
+    width: 35px;
+    height: 35px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* NAMA BISNIS */
+.brand h1 {
+    font-size: 18px;
+    color: white;
+}
+
+/* BIAR KONTEN GA KETUTUP HEADER */
+body {
+    padding-top: 60px;
+}
+
+
+
+
+
+
+
+
+
+
+/* TOMBOL MENU (GARIS TIGA) */
+.menu-btn {
+    position: absolute;
+    top: 7px;
+    left: 5px;
+    font-size: 28px;
+    cursor: pointer;
+    z-index: 1001;
+    color: white;
+}
+
+/* SIDEBAR */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -60%; /* awalnya disembunyikan */
+    width: 60%;
+    height: 100%;
+    background: #0d6efd;
+    padding-top: 60px;
+    transition: 0.3s;
+    z-index: 2000;
+}
+/* OVERLAY (AREA GELAP) */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    display: none;
+    z-index: 1500;
+}
+
+/* LINK MENU */
+.sidebar a {
+    display: block;
+    color: white;
+    padding: 15px 20px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.sidebar a:hover {
+    background: rgba(255,255,255,0.2);
+}
+
+/* RESET DASAR */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* BODY */
+body {
+    line-height: 1.6;
+    background: #f5f5f5;
+    color: #333;
+}
+
+/* NAVBAR */
+header {
+    background: #0d6efd;
+    color: white;
+    padding: 15px 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* HERO SECTION */
+#home {
+    background: linear-gradient(to right, #0d6efd, #00c6ff);
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+#home h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+#home p {
+    margin-bottom: 20px;
+}
+
+#home a {
+    background: #ffc107;
+    color: black;
+    padding: 12px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* SECTION UMUM */
+section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+/* PRODUK */
+#produk {
+    background: white;
+}
+
+#produk div {
+    background: #f1f1f1;
+    margin: 15px auto;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 300px;
+}
+
+/* TESTIMONI */
+#testimoni {
+    background: #e9f3ff;
+    font-style: italic;
+}
+
+/* CTA */
+#cta {
+    background: #0d6efd;
+    color: white;
+}
+
+#cta a {
+    background: #ffc107;
+    color: black;
+    padding: 12px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* KONTAK */
+#kontak {
+    background: white;
+}
+
+/* FOOTER */
+footer {
+  background: white;
+}
+
+/*____SOSIAL MEDIA_____*/
+.Social {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center; /* tengah (opsional) */
+}
+
+.Social a {
+    display: inline-block;
+}
+
+.Social img {
+    width: 50px;
+    height:auto;
+    transition: 0.3s;
+}
+
+/* efek hover */
+.social img:hover {
+    transform: scale(1.2);
+}
+
+
+.Alamat {
+  background: white;
+ text-align: Center;
+ font-size: 12px;
+}
+.copyright {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 3px;
+    font-size: 10px;
+}
+
+/* RESPONSIVE (HP) */
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    #home h2 {
+        font-size: 24px;
+    }
+}
